@@ -1,29 +1,20 @@
-import styled, { keyframes } from 'styled-components';
+import styled  from 'styled-components';
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-export const Container = styled.div`
+export const ParticleContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-`;
-
-export const Name = styled.div`
-  width: 22%;
-  text-align: center;
-  opacity: 0; /* Initial opacity */
-  animation: ${fadeIn} 1s ease-in-out forwards; /* Add forwards to retain the final animation state */
+  overflow: hidden;
 
   h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.5s ease, transform 0.5s ease;
+  
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 `;
