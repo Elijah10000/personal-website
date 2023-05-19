@@ -1,70 +1,24 @@
-import React, { useEffect, useRef } from 'react';
-import { random } from 'lodash';
-import styled, { keyframes } from 'styled-components';
-import { ParticleContainer } from '../styles/index-styles'; 
-
-const particleAnimation = keyframes`
-  0% {
-    opacity: 1;
-    transform: translateY(1000);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-100px);
-  }
-`;
-
-const Particle = styled.div`
-  width: 1px;
-  height: 1px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  position: absolute;
-  animation: ${particleAnimation} 3s linear infinite;
-`;
+import React from 'react';
+import { Container, IntroContainer, Bio, ImageContainer} from '../styles/index-styles';
+import Image from 'next/image';
 
 const Home = () => {
-  const particleRefs = useRef([]);
-
-  useEffect(() => {
-    const handleRandomizePosition = (particleElement) => {
-      const { innerWidth } = window;
-      const bottom = random(0, 100);
-      const left = random(0, innerWidth);
-      particleElement.style.bottom = `${bottom}%`;
-      particleElement.style.left = `${left}px`;
-    };
-
-    const handleResize = () => {
-      particleRefs.current.forEach((particleElement) => {
-        handleRandomizePosition(particleElement);
-      });
-    };
-
-    particleRefs.current.forEach((particleElement, index) => {
-      handleRandomizePosition(particleElement);
-      particleElement.style.animationDelay = `${index * 0.01}s`; // Adjust the delay value as needed
-    });
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const numParticles = 200;
-  const particles = Array.from(Array(numParticles).keys());
-
   return (
-    <ParticleContainer>
-      <h1>
-      <a href="https://github.com/Elijah10000">Elijah McNamara</a>
-      </h1>
-      {particles.map((index) => (
-        <Particle key={index} ref={(element) => (particleRefs.current[index] = element)} />
-      ))}
-    </ParticleContainer>
+    <Container>
+      <Bio>
+      <IntroContainer>
+        <h1>
+          React and Typescript Front-End Developer!
+        </h1>
+        <h3>
+          Hi, I'm Elijah McNamara, welcome to my website! I'm a passionate front-end engineer with a love for code. Take a look at some of my projects 👇
+        </h3>
+      </IntroContainer>
+      <ImageContainer>
+      <Image src="/assets/Picture.jpg" alt="Picture" width={250} height={250} style={{ borderRadius: '50%' }}  />
+      </ImageContainer>
+      </Bio>
+    </Container>
   );
 };
 
