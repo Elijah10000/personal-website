@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+export const warpAnimation = keyframes`
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -38,12 +50,26 @@ export const IntroContainer = styled.div`
     font-weight: 300;
     color: #757272;
     font-family: Poppins, sans-serif;
-    margin-top: 0.5rem; Added
+    margin-top: 0.5rem;
+    transition: color 0.5s ease, transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 `;
 
 export const ImageContainer = styled.div`
   margin-left: 5%;
-  margin-top: 2%;
+  margin-top: 4%;
+`;
 
-`;  
+export const WarpedImage = styled.img`
+  border: 3px solid black;  
+  animation: ${warpAnimation} 3s infinite;
+  transition: color 0.5s ease, transform 0.5s ease;
+
+  &:hover {
+      transform: scale(1.07);
+    }
+`;

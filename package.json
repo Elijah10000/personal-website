@@ -21,10 +21,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.1",
+    "react-transition-group": "^4.4.5",
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.194",
+    "@types/react-transition-group": "^4.4.6",
     "@types/styled-components": "^5.1.26",
     "nodemon": "^2.0.22",
     "typescript": "^5.0.4"
