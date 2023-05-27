@@ -3,12 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
 `;
 
 export const Bio = styled.div`
+  margin-top: 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,5 +111,119 @@ export const TechIcon = styled.div`
 
   &:hover {
     transform: scale(1.20);
+  }
+`;
+
+export const ProjectListIntro = styled.div`
+  margin-left: 20%;
+  margin-top: 5%;
+
+  h3 {
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+  }
+
+  h4 {
+    color: #2d2e32;
+    font-size: 1.7rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 10%;
+    margin-top: 3%;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+`;
+
+export const FIQ = styled.div`
+  margin-left: 12%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 80%;
+
+  a {
+    margin-left: 27%;
+    color: #2d2e32;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-left: 17%;
+    color: #2d2e32;
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #757272;
+    font-family: Poppins, sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-top: 2%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+
+    a {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const TextContainer = styled.div`
+`;
+
+export const TechnologiesContainer = styled.div`
+  display: flex;
+  margin-left: 7%;
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+  }
+`;
+
+export const TechnologyItem = styled.div`
+  margin-left: 6%;
+  margin-bottom: 5%;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  @media (max-width: 768px) {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-size: 1rem;
   }
 `;

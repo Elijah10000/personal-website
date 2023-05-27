@@ -5,8 +5,7 @@ import { DiCss3 } from 'react-icons/di';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiStyledcomponents, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage } from '../styles/index-styles';
-
+import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem } from '../styles/index-styles';
 
 const TechStack = () => {
   return (
@@ -63,6 +62,28 @@ const Home = () => {
         </Socials>
       </Bio>
       <TechStack />
+
+      <ProjectListIntro>
+        <h3>Portfolio</h3>
+        <h4>Each project is unique and offers something different 🖥️</h4>
+      </ProjectListIntro>
+
+      <FIQ>
+          <img src="/assets/FIQ.png" alt="FIQ" />
+        <TextContainer>
+          <h2> Football IQ 🧠</h2>
+          <p>
+            This is my football statistics website called 'Football IQ'. This site allows the users to check statistics on Europe's top 5 football leagues, with plenty of useful features, such as a dark mode, share buttons, and a comparison feature.
+          </p>
+          <TechnologiesContainer>
+            <TechnologyItem>TypeScript</TechnologyItem>
+            <TechnologyItem>Next.js</TechnologyItem>
+          </TechnologiesContainer>
+          <a href="https://github.com/Elijah10000/football-iq">
+            <FaGithubSquare className="fa" style={{ fontSize: '40px' }} />
+          </a>
+        </TextContainer>
+      </FIQ>
     </Container>
   );
 };
