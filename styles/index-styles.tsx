@@ -26,7 +26,7 @@ export const IntroContainer = styled.div`
     line-height: 1.2;
     margin-bottom: 1rem;
     font-family: Poppins, sans-serif;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
   
     &:hover {
       transform: scale(1.07);
@@ -38,8 +38,8 @@ export const IntroContainer = styled.div`
     font-weight: 300;
     color: #757272;
     font-family: Poppins, sans-serif;
-    margin-top: 0.5rem;
-    transition: transform 0.5s ease;
+    margin-top: 0.3rem;
+    transition: transform 0.3s ease;
   
   &:hover {
     transform: scale(1.07);
@@ -55,7 +55,7 @@ export const ImageContainer = styled.div`
 export const WarpedImage = styled.img`
   border: 3px solid black;
   animation: warpAnimation 3s infinite;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 
     &:hover {
       transform: scale(1.07);
@@ -79,14 +79,15 @@ export const Socials = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  transition: transform 0.5s ease;
 
   a {
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     color: #2d2e32;
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
 
     &:hover {
+      color: #3232ff;
       transform: scale(1.07);
     }
   }
@@ -120,15 +121,15 @@ export const ProjectListIntro = styled.div`
 
   h3 {
     color: #147efb;
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 750;
     text-transform: uppercase;
     font-family: Poppins, sans-serif;
   }
 
   h4 {
     color: #2d2e32;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 
   @media (max-width: 768px) {
@@ -136,44 +137,42 @@ export const ProjectListIntro = styled.div`
     margin-top: 3%;
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     h4 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 `;
 
 export const FIQ = styled.div`
-  margin-left: 12%;
+  margin-left: 16%;
   margin-top: 3%;
   display: flex;
   align-items: center;
   gap: 50px;
   width: 80%;
 
-  a {
-    margin-left: 27%;
-    color: #2d2e32;
-    font-size: 1.5rem;
-  }
-
   h2 {
     margin-left: 17%;
     color: #2d2e32;
     font-size: 1.5rem;
-    font-family: Poppins, sans-serif;
     text-transform: uppercase;
   }
 
   p {
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     color: #757272;
-    font-family: Poppins, sans-serif;
+    text-transform: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 
   @media (max-width: 768px) {
@@ -202,7 +201,30 @@ export const FIQ = styled.div`
   }
 `;
 
+export const GitHubIconFIQ = styled.div`
+  width: 6%;
+  margin-left: 30%;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: #2d2e32;
+
+    &:hover {
+      transform: scale(1.07);
+      color: #3232ff;
+    }
+`;
+
+export const Image = styled.img`
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #3232ff;
+  }
+`;
+
 export const TextContainer = styled.div`
+  margin-left: 3%;
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -215,15 +237,27 @@ export const TechnologiesContainer = styled.div`
 `;
 
 export const TechnologyItem = styled.div`
-  margin-left: 6%;
+  margin-left: 8%;
   margin-bottom: 5%;
-  font-family: Poppins, sans-serif;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.07);
+}
 
   @media (max-width: 768px) {
     margin-left: 3%;
     margin-bottom: 3%;
     font-size: 1rem;
   }
+`;
+
+export const SecureLogSys = styled.div`
+  width: 70%;
+  margin-top: 7%;
+  margin-left: 15%;
 `;
