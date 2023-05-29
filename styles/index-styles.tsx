@@ -162,10 +162,10 @@ export const FIQ = styled.div`
   }
 
   p {
+    margin-left: 3%;
     width: 60%;
     font-size: 1.1rem;
     font-weight: 400;
-    text-align: center;
     color: #757272;
     text-transform: none;
     transition: transform 0.3s ease;
@@ -219,7 +219,6 @@ export const Image = styled.img`
 
   &:hover {
     transform: scale(1.05);
-    color: #3232ff;
   }
 `;
 
@@ -256,8 +255,112 @@ export const TechnologyItem = styled.div`
   }
 `;
 
-export const SecureLogSys = styled.div`
-  width: 70%;
-  margin-top: 7%;
-  margin-left: 15%;
+export const BookReviewApp = styled.div`
+  margin-left: 12%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  width: 80%;
+
+  h2 {
+    color: #2d2e32;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-right: 3%;
+  }
+
+  p {
+    width: 55%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #757272;
+    text-transform: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-top: 2%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+
+    a {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const BookTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+`;
+
+export const BookTechnologiesContainer = styled.div`
+  display: flex;
+  margin-left: 7%;
+  width: 50%;
+  margin-top: 1%;
+  @media (max-width: 768px) {
+    margin-left: 5%;
+  }
+`;
+
+export const BookTechnologyItem = styled.div`
+  margin-right: 15%;
+  margin-bottom: 8%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+      transform: scale(1.07);
+   }
+
+  @media (max-width: 768px) {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+  }
+`;
+
+export const BookGitHubIconFIQ = styled.div`
+  width: 9%;
+  transition: transform 0.3s ease;
+  color: #2d2e32;
+
+    &:hover {
+      transform: scale(1.07);
+      color: #3232ff;
+    }
+`;
+
+export const BookImage = styled.img`
+  transition: transform 0.3s ease;
+  margin-right: 5%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
