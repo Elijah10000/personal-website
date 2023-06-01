@@ -364,3 +364,7 @@ export const BookImage = styled.img`
     transform: scale(1.05);
   }
 `;
+
+export const SecurityScreen = styled.div`
+  margin-left: 12%;
+`;

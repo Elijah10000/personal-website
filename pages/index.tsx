@@ -5,7 +5,7 @@ import { DiCss3 } from 'react-icons/di';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiStyledcomponents, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage } from '../styles/index-styles';
+import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen } from '../styles/index-styles';
 
 const TechStack = () => {
   return (
@@ -42,6 +42,7 @@ const TechStack = () => {
 const Home = () => {
   return (
     <Container>
+
       <Bio>
         <IntroContainer>
           <h1>React and Typescript Front-End Developer!</h1>
@@ -105,6 +106,10 @@ const Home = () => {
         </BookTextContainer>
         <BookImage src="/assets/BRA.png" alt="BRA" style={{ width: '40%', height: '40%' }} />
       </BookReviewApp>
+
+      <SecurityScreen>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam error tenetur quo sed perferendis vitae deserunt doloribus, odit voluptatem quaerat quia possimus aut, reprehenderit ducimus sint dolorem eos? Dolor voluptatibus recusandae quis harum fuga similique quia soluta consequatur voluptatum ratione in atque illum saepe, nemo qui minus architecto ipsa. Odit, atque error? Minus beatae voluptatem eos? Dolores quod repudiandae laboriosam ea tempore. Atque doloremque vero perspiciatis aliquid optio? Asperiores, earum perferendis ex corrupti illo repellendus aspernatur? Ipsam dignissimos atque nisi omnis facilis repudiandae dolore fuga aspernatur sapiente voluptate. Veniam quae animi illo iure aliquid quibusdam eaque aperiam doloremque ipsa voluptates laudantium cupiditate maiores voluptas sint reprehenderit culpa ex, tempora vel assumenda sequi quos. Asperiores, temporibus? Sint necessitatibus harum beatae deserunt quos in quam nostrum voluptate rem? Consequatur animi sunt aspernatur voluptatem quisquam voluptates tenetur nam laborum ratione doloremque sed blanditiis doloribus mollitia, error necessitatibus non quibusdam dignissimos dolor, rem quis? Dicta possimus voluptas quidem minima placeat optio magni rerum fugiat maxime aut. Voluptatibus ipsa eveniet soluta beatae quis consequuntur harum explicabo quasi dolorem magni cumque sed officia consectetur, eum corrupti assumenda animi accusamus rem ipsum quae? Sequi delectus quis quasi iste architecto totam. Laboriosam recusandae harum voluptatem, iusto repudiandae dicta perspiciatis sunt! Minus eos, voluptatem nihil fugiat molestias totam reprehenderit autem culpa, debitis, eligendi id tenetur quia eum delectus modi illum possimus amet praesentium recusandae. Suscipit, nisi aspernatur dolorum dicta voluptates a hic sapiente, deleniti tempora nobis quaerat repellat fuga accusantium commodi dolore est, aliquid tenetur officia laudantium? Sapiente labore ducimus laborum illum explicabo nihil necessitatibus excepturi quis asperiores voluptatibus, odit enim. Sed dolorem iste ullam ab tenetur! Libero ullam necessitatibus aspernatur et tempore error minima maxime enim deleniti odio temporibus ipsum, magni illo fuga officiis dicta praesentium tempora quasi accusantium dolorum blanditiis molestias facere sapiente unde. Exercitationem repellat ipsam accusantium nostrum nobis eligendi natus enim, perspiciatis odio delectus ab neque quae at, explicabo eaque? Autem suscipit accusamus at ratione temporibus incidunt quidem iste, velit, esse ducimus reiciendis vel quod fuga tenetur voluptas dolore perferendis molestiae? In ducimus incidunt maiores odio voluptatem illo ratione debitis suscipit cum, excepturi voluptatibus repellendus eum vitae consequuntur nulla sunt alias voluptatum pariatur, quam natus, id expedita laborum. Officiis, dicta magnam perferendis sint quod, perspiciatis corrupti nostrum eligendi rerum ratione, quae odit! At, non atque. Suscipit doloremque sequi quibusdam eligendi! At nulla quo porro, nihil fugit soluta officia, quam est ipsum minus eos! Corporis itaque dignissimos rerum nam inventore modi suscipit minima atque et exercitationem, voluptatum laboriosam quos magnam labore repellendus molestiae unde quam dolorum dolores explicabo. Recusandae itaque assumenda, repudiandae repellendus modi, suscipit nemo, pariatur explicabo nostrum odit dolores ex ipsum eos. Eligendi, consequuntur ab. Dolorem cumque soluta cum aperiam laboriosam ipsum, odit eum eligendi voluptatum voluptatibus. Saepe cum quibusdam velit doloremque vel reiciendis iste sequi soluta eaque, similique doloribus aperiam praesentium corporis rem voluptas reprehenderit perspiciatis fugit. Sint optio ipsam minus culpa nihil hic, consequatur dignissimos esse, eaque numquam ipsa accusamus laudantium animi consequuntur iusto veniam, porro deleniti obcaecati! In praesentium dolorum neque?
+      </SecurityScreen>
     </Container>
   );
 };
