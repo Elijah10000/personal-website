@@ -6,6 +6,49 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
+export const MenuBar = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+`;
+
+export const Nav = styled.nav`
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li:first-child {
+    float: left;
+  }
+
+  ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d2e32;
+    font-family: Poppins, sans-serif;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      color: #3232ff;
+      transform: scale(1.07);
+    }
+  }
+`;
+
 export const Bio = styled.div`
   margin-top: 7%;
   display: flex;
@@ -366,5 +409,111 @@ export const BookImage = styled.img`
 `;
 
 export const SecurityScreen = styled.div`
-  margin-left: 12%;
+  margin-left: 20%;
+  margin-top: 6%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 80%;
+
+  h2 {
+    margin-left: 17%;
+    color: #2d2e32;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-left: 5%;
+    width: 60%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #757272;
+    text-transform: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-top: 2%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+
+    a {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const SecurityScreenTextContainer = styled.div`
+  margin-left: 6%;
+`;
+
+export const SecurityScreenTechnologiesContainer = styled.div`
+  display: flex;
+  margin-left: 2%;
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+  }
+`;
+
+export const SecurityScreenTechnologyItem = styled.div`
+  margin-top: 1%;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: none;
+  transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.07);
+}
+
+  @media (max-width: 768px) {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-size: 1rem;
+  }
+`;
+
+export const SecurityScreenGitHubIconFIQ = styled.div`
+  width: 6%;
+  margin-left: 30.5%;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: #2d2e32;
+
+    &:hover {
+      transform: scale(1.07);
+      color: #3232ff;
+    }
+`;
+
+export const SecurityScreenImage = styled.img`
+  transition: transform 0.3s ease;
+
+&:hover {
+  transform: scale(1.05);
+}
 `;
