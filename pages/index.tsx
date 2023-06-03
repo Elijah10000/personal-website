@@ -5,7 +5,7 @@ import { DiCss3 } from 'react-icons/di';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiStyledcomponents, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav } from '../styles/index-styles';
+import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav, AboutMe, AboutMeTextContainer } from '../styles/index-styles';
 
 const TechStack = () => {
   return (
@@ -52,23 +52,24 @@ const Home = () => {
   };
   return (
     <Container>
-
-      <MenuBar>
-        <Nav>
-        <ul>
-            <li><a href="#top" onClick={handleNavLinkClick}>elijah.lyndon</a></li>
-            <li><a href="#top" onClick={handleNavLinkClick}>Home</a></li>
-            <li><a href="#about" onClick={handleNavLinkClick}>About</a></li>
-            <li><a href="#projects" onClick={handleNavLinkClick}>Projects</a></li>
-            <li><a href="#contact" onClick={handleNavLinkClick}>Contact</a></li>
-          </ul>
-        </Nav>
-      </MenuBar>
-
       <section id="top">
+        <MenuBar>
+          <Nav>
+            <ul>
+              <li><a href="#top" onClick={handleNavLinkClick}>elijah.lyndon</a></li>
+              <li><a href="#top" onClick={handleNavLinkClick}>Home</a></li>
+              <li><a href="#about" onClick={handleNavLinkClick}>About</a></li>
+              <li><a href="#projects" onClick={handleNavLinkClick}>Projects</a></li>
+              <li><a href="#contact" onClick={handleNavLinkClick}>Contact</a></li>
+            </ul>
+          </Nav>
+        </MenuBar>
+      </section>
+
+
       <Bio>
         <IntroContainer>
-          <h1>React and Typescript Front-End Developer!</h1>
+          <h1>React and Typescript Frontend Developer!</h1>
           <h3>
             Hi, I'm Elijah McNamara, welcome to my website! I'm a passionate front-end engineer with a love for code. Take a look at some of my projects 👇
           </h3>
@@ -85,13 +86,29 @@ const Home = () => {
           </a>
         </Socials>
       </Bio>
+
       <TechStack />
 
+      <section id="about">
+        <AboutMe>
+          <WarpedImage src="/assets/Picture.jpg" alt="Picture" style={{ height: '250px', width: '250px', borderRadius: '90px' }} />
+          <AboutMeTextContainer>
+            <h3>About Me</h3>
+            <h4>
+              2023 Computing graduate from NCI, based in Dublin, Ireland📍
+            </h4>
+            <p>
+              I have 4 years of experience in developing games, websites, and other software applications, along with a 6 month internship under my belt. This has resulted in me gaining exposure to a wide variety or tools, software, technologies, and ways of thinking. My areas of preference include frontend development, using React, TypeScript, JavaScript, CSS, and Styled Components, in order to provide user-friendly and feature-packed services. I also have experience in using databases and handling sensitive user information. In addition, I have plenty of practice in working in teams and working collaboratively on projects in groups big and small, which has resulted in well-developed projects and applications.
+            </p>
+          </AboutMeTextContainer>
+        </AboutMe>
+      </section>
+
       <section id="projects">
-      <ProjectListIntro>
-        <h3>Portfolio</h3>
-        <h4>Each project is unique and offers something different 🖥️</h4>
-      </ProjectListIntro>
+        <ProjectListIntro>
+          <h3>Portfolio</h3>
+          <h4>Each project is unique and offers something different 🖥️</h4>
+        </ProjectListIntro>
       </section>
 
       <FIQ>
@@ -152,8 +169,6 @@ const Home = () => {
           </SecurityScreenGitHubIconFIQ>
         </SecurityScreenTextContainer>
       </SecurityScreen>
-      
-      </section>
     </Container>
   );
 };

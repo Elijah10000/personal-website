@@ -13,10 +13,12 @@ export const MenuBar = styled.header`
   width: 100%;
   background-color: #f2f2f2;
   padding: 10px;
+  z-index: 9999;
 `;
 
 export const Nav = styled.nav`
   ul {
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,14 +45,14 @@ export const Nav = styled.nav`
     transition: transform 0.3s ease;
 
     &:hover {
-      color: #3232ff;
+      color: #147efb;
       transform: scale(1.07);
     }
   }
 `;
 
 export const Bio = styled.div`
-  margin-top: 7%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,7 +132,7 @@ export const Socials = styled.div`
     transition: transform 0.3s ease;
 
     &:hover {
-      color: #3232ff;
+      color: #147efb;
       transform: scale(1.07);
     }
   }
@@ -156,6 +158,71 @@ export const TechIcon = styled.div`
   &:hover {
     transform: scale(1.20);
   }
+`;
+
+export const AboutMe = styled.div`
+  margin-top: 6%;
+  margin-bottom: 2%;
+  margin-left: 20%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  h3 {
+    margin-left: 21%;
+    color: #147efb;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    color: #2d2e32;
+    font-size: 1.2rem;
+  }
+
+
+  p {
+    width: 60%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #757272;
+    text-transform: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-top: 2%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+
+    a {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+`;
+
+export const AboutMeTextContainer = styled.div`
+  width: 75%;
+  margin-bottom: 3%;
 `;
 
 export const ProjectListIntro = styled.div`
@@ -253,7 +320,7 @@ export const GitHubIconFIQ = styled.div`
 
     &:hover {
       transform: scale(1.07);
-      color: #3232ff;
+      color: #147efb;
     }
 `;
 
@@ -395,7 +462,7 @@ export const BookGitHubIconFIQ = styled.div`
 
     &:hover {
       transform: scale(1.07);
-      color: #3232ff;
+      color: #147efb;
     }
 `;
 
@@ -506,7 +573,7 @@ export const SecurityScreenGitHubIconFIQ = styled.div`
 
     &:hover {
       transform: scale(1.07);
-      color: #3232ff;
+      color: #147efb;
     }
 `;
 
