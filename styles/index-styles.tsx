@@ -584,3 +584,68 @@ export const SecurityScreenImage = styled.img`
   transform: scale(1.05);
 }
 `;
+
+export const ContactMe = styled.div`
+  margin-left: 20%;
+  margin-top: 8%;
+
+  p {
+    color: #147efb;
+    font-size: 1.3rem;
+    font-weight: 750;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+  }
+
+  h3 {
+    color: #2d2e32;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+  }
+`;
+
+export const Title = styled.h3`
+`;
+
+export const ContactInformation = styled.div`
+  display: flex;
+  gap: 15%;
+  margin-top: 4%;
+`;
+
+export const ContactItem = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Icon = styled.h1`
+  font-size: 46px;
+  margin-right: 10px;
+`;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+
+  p {
+    margin-top: 0rem;
+    margin-bottom: 0%;
+  }
+
+  h4 {
+    margin-top: 0rem;
+    margin-bottom: 3%;
+  }
+
+  a {
+      &:hover {
+        color: #147efb;
+      }
+    }
+`;
+
+export const InformationTitle = styled.h4`
+`;

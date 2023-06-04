@@ -5,7 +5,7 @@ import { DiCss3 } from 'react-icons/di';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiStyledcomponents, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav, AboutMe, AboutMeTextContainer } from '../styles/index-styles';
+import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav, AboutMe, AboutMeTextContainer, ContactMe, Icon, ContactInformation, Text, Title, ContactItem, InformationTitle } from '../styles/index-styles';
 
 const TechStack = () => {
   return (
@@ -169,6 +169,44 @@ const Home = () => {
           </SecurityScreenGitHubIconFIQ>
         </SecurityScreenTextContainer>
       </SecurityScreen>
+
+      <section id="contact">
+      <ContactMe>
+        <p>Contact</p>
+        <Title>Please, get in touch! 🤝</Title>
+        <ContactInformation>
+          <ContactItem>
+            <Icon>🗺️</Icon>
+            <Text>
+              <p>Location</p>
+              <h4>Dublin, Ireland 📍</h4>
+            </Text>
+          </ContactItem>
+
+          <ContactItem>
+            <Icon>📧</Icon>
+            <Text>
+              <p>Email</p>
+              <h4>
+                <a href="mailto:elijahlyndon14@gmail.com">elijahlyndon14@gmail.com</a>
+              </h4>
+            </Text>
+
+          </ContactItem>
+
+          <ContactItem>
+            <Icon>🔗</Icon>
+            <Text>
+              <p>LinkedIn</p>
+              <h4>
+                <a href="https://www.linkedin.com/in/elijah-mcnamara" target="_blank" rel="noopener noreferrer">linkedin.com/in/elijah-mcnamara</a>
+              </h4>
+            </Text>
+
+          </ContactItem>
+        </ContactInformation>
+      </ContactMe>
+      </section>
     </Container>
   );
 };
