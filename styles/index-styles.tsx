@@ -139,10 +139,11 @@ export const Socials = styled.div`
 `;
 
 export const TechStackContainer = styled.div`
+
   h3 {
     border-right: 2px solid rgba(45,46,50,.5);
     padding-right: 1.5rem;  
-  }
+    }
 
   display: flex;
   justify-content: center;
@@ -613,6 +614,7 @@ export const ContactInformation = styled.div`
   display: flex;
   gap: 15%;
   margin-top: 4%;
+  margin-right: 10%;
 `;
 
 export const ContactItem = styled.div`
@@ -622,7 +624,7 @@ export const ContactItem = styled.div`
 
 export const Icon = styled.h1`
   font-size: 46px;
-  margin-right: 10px;
+  margin-right: 15px;
 `;
 
 export const Text = styled.div`
@@ -648,4 +650,35 @@ export const Text = styled.div`
 `;
 
 export const InformationTitle = styled.h4`
+`;
+
+export const Footer = styled.footer`
+  margin-top: 4%;
+  background-color: #2f2f2f;
+  width: 100%;
+  height: 120px;
+
+  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    text-align: center; 
+  }
+`;
+
+export const FooterSocials = styled.div`
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+
+  a {
+      &:hover {
+        color: #147efb;
+        transform: scale(1.07);
+      }
+    }
 `;

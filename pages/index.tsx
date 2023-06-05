@@ -5,7 +5,7 @@ import { DiCss3 } from 'react-icons/di';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiStyledcomponents, SiNextdotjs, SiTypescript } from 'react-icons/si';
-import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav, AboutMe, AboutMeTextContainer, ContactMe, Icon, ContactInformation, Text, Title, ContactItem, InformationTitle } from '../styles/index-styles';
+import { Bio, Container, ImageContainer, IntroContainer, Socials, TechIcon, TechStackContainer, WarpedImage, FIQ, TextContainer, ProjectListIntro, TechnologiesContainer, TechnologyItem, GitHubIconFIQ, Image, BookReviewApp, BookTextContainer, BookTechnologiesContainer, BookTechnologyItem, BookGitHubIconFIQ, BookImage, SecurityScreen, SecurityScreenTextContainer, SecurityScreenTechnologyItem, SecurityScreenTechnologiesContainer, SecurityScreenGitHubIconFIQ, SecurityScreenImage, MenuBar, Nav, AboutMe, AboutMeTextContainer, ContactMe, Icon, ContactInformation, Text, Title, ContactItem, InformationTitle, Footer, FooterSocials } from '../styles/index-styles';
 
 const TechStack = () => {
   return (
@@ -207,6 +207,20 @@ const Home = () => {
         </ContactInformation>
       </ContactMe>
       </section>
+
+      <Footer>
+        <p>Copyright © 2023 Elijah McNamara</p>
+
+        <FooterSocials>
+          <a href="https://github.com/Elijah10000">
+            <FaGithubSquare className="fa" style={{ fontSize: '40px' }} />
+          </a>
+          <a href="https://linkedin.com/in/elijah-mcnamara">
+            <FaLinkedin className="fa" style={{ fontSize: '40px' }} />
+          </a>
+        </FooterSocials>
+      </Footer>
+
     </Container>
   );
 };
