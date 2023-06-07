@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 `;
 
 export const MenuBar = styled.header`
@@ -14,6 +16,15 @@ export const MenuBar = styled.header`
   background-color: #f2f2f2;
   padding: 10px;
   z-index: 9999;
+
+  @media (max-width: 375px) {
+    padding: 3px;
+  }
+
+  @media (max-width: 544px) {
+    padding: 3px;
+  }
+  
 `;
 
 export const Nav = styled.nav`
@@ -49,6 +60,19 @@ export const Nav = styled.nav`
       transform: scale(1.07);
     }
   }
+
+  @media (max-width: 375px) {
+    ul li a {
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: 544px) {
+    ul li a {
+      font-size: 0.8rem;
+      padding: 5px;
+    }  }
 `;
 
 export const Bio = styled.div`
@@ -139,17 +163,26 @@ export const Socials = styled.div`
 `;
 
 export const TechStackContainer = styled.div`
-
-  h3 {
-    border-right: 2px solid rgba(45,46,50,.5);
-    padding-right: 1.5rem;  
-    }
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+
+  h3 {
+    border-right: 2px solid rgba(45, 46, 50, 0.5);
+    padding-right: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+
+    h3 {
+      border-right: none;
+      padding-right: 0;
+      margin-right: .5rem;
+    }
+  }
 `;
 
 export const TechIcon = styled.div`
@@ -157,7 +190,16 @@ export const TechIcon = styled.div`
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: scale(1.20);
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 375px) {
+    font-size: 20px;
+    padding: 1px;
   }
 `;
 
@@ -330,6 +372,10 @@ export const Image = styled.img`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 375px) {
+    width: 300px;
   }
 `;
 
@@ -605,6 +651,19 @@ export const ContactMe = styled.div`
     text-transform: uppercase;
     font-family: Poppins, sans-serif;
   }
+
+  @media (max-width: 768px) {
+    margin-left: 5%;
+    margin-top: 4%;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -615,16 +674,34 @@ export const ContactInformation = styled.div`
   gap: 15%;
   margin-top: 4%;
   margin-right: 10%;
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 0;
+  }
 `;
 
 export const ContactItem = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 1600px) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    flex-basis: 50%;
+  }
 `;
 
 export const Icon = styled.h1`
   font-size: 46px;
   margin-right: 15px;
+
+  @media (max-width: 1600px) {
+    font-size: 36px;
+  }
 `;
 
 export const Text = styled.div`
@@ -633,20 +710,32 @@ export const Text = styled.div`
   height: 25%;
 
   p {
-    margin-top: 0rem;
-    margin-bottom: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
   }
 
   h4 {
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 3%;
+    font-size: 1.2rem;
   }
 
   a {
-      &:hover {
-        color: #147efb;
-      }
+    &:hover {
+      color: #147efb;
     }
+  }
+
+  @media (max-width: 1600px) {
+    p {
+      font-size: 1rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const InformationTitle = styled.h4`
