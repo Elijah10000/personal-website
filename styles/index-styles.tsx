@@ -140,7 +140,6 @@ export const WarpedImage = styled.img`
     100% {
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
-    
   }
 `;
 
@@ -261,6 +260,15 @@ export const AboutMe = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 1373px) {
+    margin-left: 12%;
+
+    p {
+      width: 85%;
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const AboutMeTextContainer = styled.div`
@@ -328,6 +336,12 @@ export const FIQ = styled.div`
     }
   }
 
+  @media (max-width: 1373px) {
+    width: 90%;
+    margin-left: 12%;
+    /* background-color: red; */
+  }
+
   @media (max-width: 768px) {
     margin-left: 5%;
     margin-top: 2%;
@@ -374,6 +388,10 @@ export const Image = styled.img`
     transform: scale(1.05);
   }
 
+  @media (max-width: 1373px) {
+    width: 45%;
+  }
+
   @media (max-width: 375px) {
     width: 300px;
   }
@@ -381,6 +399,18 @@ export const Image = styled.img`
 
 export const TextContainer = styled.div`
   margin-left: 3%;
+
+  @media (max-width: 1373px) {
+    width: 55%;
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -404,6 +434,10 @@ export const TechnologyItem = styled.div`
 &:hover {
   transform: scale(1.07);
 }
+
+@media (max-width: 1373px) {
+    font-size: 0.8rem;
+  }
 
   @media (max-width: 768px) {
     margin-left: 3%;
