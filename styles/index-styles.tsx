@@ -339,26 +339,21 @@ export const FIQ = styled.div`
   @media (max-width: 1373px) {
     width: 90%;
     margin-left: 12%;
-    /* background-color: red; */
   }
 
-  @media (max-width: 768px) {
-    margin-left: 5%;
-    margin-top: 2%;
-
+  @media (max-width: 970px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
-    width: 90%;
-
-    a {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
+    width: 100%;
 
     h2 {
-      margin-left: 0;
       font-size: 1.2rem;
+      text-align: center;
+      margin-left: 0;
     }
 
     p {
@@ -366,19 +361,21 @@ export const FIQ = styled.div`
       font-size: 1rem;
     }
   }
-`;
 
-export const GitHubIconFIQ = styled.div`
-  width: 6%;
-  margin-left: 30%;
-  align-items: center;
-  transition: transform 0.3s ease;
-  color: #2d2e32;
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 90%;
 
-    &:hover {
-      transform: scale(1.07);
-      color: #147efb;
+    h2 {
+      font-size: 1.2rem;
     }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -390,6 +387,10 @@ export const Image = styled.img`
 
   @media (max-width: 1373px) {
     width: 45%;
+  }
+
+  @media (max-width: 970px) {
+    display: none;
   }
 
   @media (max-width: 375px) {
@@ -411,11 +412,21 @@ export const TextContainer = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 970px) {
+    align-items: center;
+      width: 88%;
+  }
 `;
 
 export const TechnologiesContainer = styled.div`
   display: flex;
   margin-left: 7%;
+
+  @media (max-width: 970px) {
+    margin-left: 35%;
+    width: 50%;
+  }
 
   @media (max-width: 768px) {
     margin-left: 5%;
@@ -431,18 +442,42 @@ export const TechnologyItem = styled.div`
   text-transform: none;
   transition: transform 0.3s ease;
 
-&:hover {
-  transform: scale(1.07);
-}
+  &:hover {
+    transform: scale(1.07);
+  }
 
-@media (max-width: 1373px) {
+  @media (max-width: 1373px) {
     font-size: 0.8rem;
+  }
+
+  @media (max-width: 970px) {
+    gap: 40%;
+    font-size: 1rem;
   }
 
   @media (max-width: 768px) {
     margin-left: 3%;
     margin-bottom: 3%;
     font-size: 1rem;
+  }
+`;
+
+export const GitHubIconFIQ = styled.div`
+  width: 6%;
+  margin-left: 30%;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: #2d2e32;
+
+  &:hover {
+    transform: scale(1.07);
+    color: #147efb;
+  }
+
+  @media (max-width: 970px) {
+    margin-left: 48%;
+    width: 20%;
+    margin-top: 3%;
   }
 `;
 
@@ -473,26 +508,55 @@ export const BookReviewApp = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    margin-left: 5%;
-    margin-top: 2%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  @media (max-width: 1373px) {
     width: 90%;
-
-    a {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
+    margin-left: 6%;
 
     h2 {
-      margin-left: 0;
       font-size: 1.2rem;
     }
 
     p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 970px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    p {
       width: 100%;
+      font-size: 1rem;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 90%;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
       font-size: 1rem;
     }
   }
@@ -504,6 +568,14 @@ export const BookTextContainer = styled.div`
   align-items: center;
   margin-top: 5%;
   width: 100%;
+
+  @media (max-width: 970px) {
+    align-items: center;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const BookTechnologiesContainer = styled.div`
@@ -511,8 +583,10 @@ export const BookTechnologiesContainer = styled.div`
   margin-left: 7%;
   width: 50%;
   margin-top: 1%;
-  @media (max-width: 768px) {
-    margin-left: 5%;
+
+  @media (max-width: 970px) {
+    margin-left: 35%;
+    width: 70%;
   }
 `;
 
@@ -526,8 +600,12 @@ export const BookTechnologyItem = styled.div`
   transition: transform 0.3s ease;
 
   &:hover {
-      transform: scale(1.07);
-   }
+    transform: scale(1.07);
+  }
+
+  @media (max-width: 970px) {
+    font-size: 1rem;
+  }
 
   @media (max-width: 768px) {
     margin-left: 3%;
@@ -541,10 +619,15 @@ export const BookGitHubIconFIQ = styled.div`
   transition: transform 0.3s ease;
   color: #2d2e32;
 
-    &:hover {
-      transform: scale(1.07);
-      color: #147efb;
-    }
+  &:hover {
+    transform: scale(1.07);
+    color: #147efb;
+  }
+
+  @media (max-width: 970px) {
+    margin-left: 18%;
+    width: 20%;
+  }
 `;
 
 export const BookImage = styled.img`
@@ -609,15 +692,50 @@ export const SecurityScreen = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 970px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 88%;
+
+    h2 {
+      margin-left: 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const SecurityScreenTextContainer = styled.div`
   margin-left: 6%;
+
+  @media (max-width: 970px) {
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+
+    h2 {
+      font-size: 1rem;
+    }
+  } 
 `;
 
 export const SecurityScreenTechnologiesContainer = styled.div`
   display: flex;
   margin-left: 2%;
+
+  @media (max-width: 970px) {
+    margin-left: 25%;
+  }
 
   @media (max-width: 768px) {
     margin-left: 5%;
@@ -634,9 +752,13 @@ export const SecurityScreenTechnologyItem = styled.div`
   text-transform: none;
   transition: transform 0.3s ease;
 
-&:hover {
-  transform: scale(1.07);
-}
+  &:hover {
+    transform: scale(1.07);
+  }
+
+  @media (max-width: 970px) {
+    font-size: 1rem;
+  }
 
   @media (max-width: 768px) {
     margin-left: 3%;
@@ -652,18 +774,27 @@ export const SecurityScreenGitHubIconFIQ = styled.div`
   transition: transform 0.3s ease;
   color: #2d2e32;
 
-    &:hover {
-      transform: scale(1.07);
-      color: #147efb;
-    }
+  &:hover {
+    transform: scale(1.07);
+    color: #147efb;
+  }
+
+  @media (max-width: 970px) {
+    margin-left: 46.5%;
+    width: 20%;
+}
 `;
 
 export const SecurityScreenImage = styled.img`
   transition: transform 0.3s ease;
 
-&:hover {
-  transform: scale(1.05);
-}
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 970px) {
+    display: none;
+  }
 `;
 
 export const ContactMe = styled.div`

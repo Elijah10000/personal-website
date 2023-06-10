@@ -116,7 +116,7 @@ const Home = () => {
         <TextContainer>
           <h2> Football IQ 🧠</h2>
           <p>
-            This is my football statistics website called 'Football IQ'. This site allows the users to check statistics on Europe's top 5 football leagues, with plenty of useful features, such as a dark mode, share buttons, and a comparison feature.
+            This is my football statistics website called 'Football IQ'. With 'Football IQ', users can delve into the fascinating world of Europe's top 5 football leagues and explore comprehensive statistics. 'Football IQ' provides a rich and intuitive interface that allows you to navigate through the site effortlessly, it offers a sleek and modern dark mode, it allows you to share your favorite findings with friends and fellow football enthusiasts with the integrated share buttons, along with a standout comparison feature. Here, you can select multiple teams or players and compare their statistics side by side.
           </p>
           <TechnologiesContainer>
             <TechnologyItem>TypeScript</TechnologyItem>
@@ -171,41 +171,41 @@ const Home = () => {
       </SecurityScreen>
 
       <section id="contact">
-      <ContactMe>
-        <p>Contact</p>
-        <Title>Please, get in touch! 🤝</Title>
-        <ContactInformation>
-          <ContactItem>
-            <Icon>🗺️</Icon>
-            <Text>
-              <p>Location</p>
-              <h4>Dublin, Ireland 📍</h4>
-            </Text>
-          </ContactItem>
+        <ContactMe>
+          <p>Contact</p>
+          <Title>Please, get in touch! 🤝</Title>
+          <ContactInformation>
+            <ContactItem>
+              <Icon>🗺️</Icon>
+              <Text>
+                <p>Location</p>
+                <h4>Dublin, Ireland 📍</h4>
+              </Text>
+            </ContactItem>
 
-          <ContactItem>
-            <Icon>📧</Icon>
-            <Text>
-              <p>Email</p>
-              <h4>
-                <a href="mailto:elijahlyndon14@gmail.com">elijahlyndon14@gmail.com</a>
-              </h4>
-            </Text>
+            <ContactItem>
+              <Icon>📧</Icon>
+              <Text>
+                <p>Email</p>
+                <h4>
+                  <a href="mailto:elijahlyndon14@gmail.com">elijahlyndon14@gmail.com</a>
+                </h4>
+              </Text>
 
-          </ContactItem>
+            </ContactItem>
 
-          <ContactItem>
-            <Icon>🔗</Icon>
-            <Text>
-              <p>LinkedIn</p>
-              <h4>
-                <a href="https://www.linkedin.com/in/elijah-mcnamara" target="_blank" rel="noopener noreferrer">linkedin.com/in/elijah-mcnamara</a>
-              </h4>
-            </Text>
+            <ContactItem>
+              <Icon>🔗</Icon>
+              <Text>
+                <p>LinkedIn</p>
+                <h4>
+                  <a href="https://www.linkedin.com/in/elijah-mcnamara" target="_blank" rel="noopener noreferrer">linkedin.com/in/elijah-mcnamara</a>
+                </h4>
+              </Text>
 
-          </ContactItem>
-        </ContactInformation>
-      </ContactMe>
+            </ContactItem>
+          </ContactInformation>
+        </ContactMe>
       </section>
 
       <Footer>
