@@ -237,13 +237,9 @@ export const AboutMe = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-left: 5%;
-    margin-top: 2%;
-
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    width: 90%;
+    margin-top: 3%;
+    margin-left: 60%;
+    width: 100%;
 
     a {
       margin-left: 0;
@@ -251,13 +247,17 @@ export const AboutMe = styled.div`
     }
 
     h2 {
-      margin-left: 0;
-      font-size: 1.2rem;
+      /* margin-left: 0; */
+      font-size: 1rem;
     }
 
     p {
       width: 100%;
       font-size: 1rem;
+    }
+
+    img {
+      display: none;
     }
   }
 
