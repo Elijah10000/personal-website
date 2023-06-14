@@ -184,7 +184,7 @@ export const TechStackContainer = styled.div`
 `;
 
 export const TechIcon = styled.div`
-  font-size: 50px;
+  font-size: 70px;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -318,7 +318,7 @@ export const FIQ = styled.div`
   width: 80%;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 25%;
     color: #2d2e32;
     text-transform: uppercase;
@@ -364,20 +364,20 @@ export const FIQ = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    width: 90%;
+  @media (max-width: 500px) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 100%;
 
-    h2 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
+  h2 {
+    font-size: 1.2rem;
   }
+
+  p {
+    font-size: 1rem;
+  }
+}
 `;
 
 export const Image = styled.img`
@@ -416,15 +416,26 @@ export const TextContainer = styled.div`
     }
   }
 
-  @media (min-width: 975px) {
+  @media (max-width: 970px) {
     align-items: center;
-    width: 88%;
+    width: 90%;
+
+    p {
+      width: 89%;
+      height: 70%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    align-items: center;
+    width: 100%;
 
     p {
       width: 80%;
       height: 70%;
     }
   }
+
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -579,11 +590,13 @@ export const BookTextContainer = styled.div`
   margin-top: 5%;
   width: 100%;
 
-  @media (min-width: 975px) {
+  @media (max-width: 970px) {
     align-items: center;
+    width: 100%;
 
-    h2 {
-      font-size: 1rem;
+    p {
+      width: 100%;
+      height: 70%;
     }
   }
 `;
@@ -703,7 +716,7 @@ export const SecurityScreen = styled.div`
     }
   }
 
-  @media (max-width: 975px) {
+  @media (max-width: 970px) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 6%;
@@ -726,21 +739,17 @@ export const SecurityScreen = styled.div`
 
 export const SecurityScreenTextContainer = styled.div`
   margin-left: 6%;
+  width: 50%;
 
-  @media (min-width: 975px) {
-    height: 40%;
-    margin-left: 0;
+  @media (max-width: 970px) {
+    align-items: center;
+    width: 90%;
 
     p {
-      width: 90%;
+      width: 89%;
+      height: 70%;
     }
-
-    h2 {
-      font-size: 1rem;
-      width: 50%;
-      margin-left: 27%;
-    }
-  } 
+  }
 `;
 
 export const SecurityScreenTechnologiesContainer = styled.div`

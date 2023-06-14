@@ -75,7 +75,7 @@ const Home = () => {
           </h3>
         </IntroContainer>
         <ImageContainer>
-          <WarpedImage src="/assets/Picture.jpg" alt="Picture" style={{ height: '250px', width: '250px', borderRadius: '90px' }} />
+          <WarpedImage src="/assets/Picture1.jpg" alt="Picture1" style={{ height: '300px', width: '300px', borderRadius: '90px' }} />
         </ImageContainer>
         <Socials>
           <a href="https://github.com/Elijah10000">
@@ -91,7 +91,7 @@ const Home = () => {
 
       <section id="about">
         <AboutMe>
-          <WarpedImage src="/assets/Picture.jpg" alt="Picture" style={{ height: '250px', width: '250px', borderRadius: '90px' }} />
+          <WarpedImage src="/assets/Picture2.jpg" alt="Picture2" style={{ height: '300px', width: '300px', borderRadius: '90px' }} />
           <AboutMeTextContainer>
             <h3>About Me</h3>
             <h4>
@@ -114,7 +114,7 @@ const Home = () => {
       <FIQ>
         <Image src="/assets/FIQ.png" alt="FIQ" />
         <TextContainer>
-          <h2> Football IQ 🧠</h2>
+          <h2> Football IQ 🧠 </h2>
           <p>
             This is my football statistics website called 'Football IQ'. With 'Football IQ', users can delve into the fascinating world of Europe's top 5 football leagues and explore comprehensive statistics. 'Football IQ' provides a rich and intuitive interface that allows you to navigate through the site effortlessly, it offers a sleek and modern dark mode, it allows you to share your favorite findings with friends and fellow football enthusiasts with the integrated share buttons, along with a standout comparison feature. Here, you can select multiple teams or players and compare their statistics side by side.
           </p>
