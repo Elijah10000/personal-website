@@ -235,29 +235,29 @@ export const AboutMe = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    margin-top: 3%;
-    margin-left: 60%;
-    width: 100%;
+  @media (max-width: 500px) {
+  margin-top: 3%;
+  margin-left: 0;
+  width: 100%;
 
-    a {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
-
-    h2 {
-      font-size: 1rem;
-    }
-
-    p {
-      width: 100%;
-      font-size: 1rem;
-    }
-
-    img {
-      display: none;
-    }
+  a {
+    margin-left: 0;
+    font-size: 1.2rem;
   }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  img {
+    display: none;
+  }
+}
 
   @media (max-width: 1373px) {
     margin-left: 12%;
@@ -408,7 +408,8 @@ export const TextContainer = styled.div`
     width: 55%;
 
     h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
+      margin-left: 22%;
     }
 
     p {
@@ -427,35 +428,40 @@ export const TextContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-    align-items: center;
-    width: 100%;
+    width: 95%;
+
+    h2 {
+      margin-left: 5%;
+    }
 
     p {
-      width: 80%;
+      width: 100%;
       height: 70%;
     }
   }
-
 `;
 
 export const TechnologiesContainer = styled.div`
   display: flex;
-  margin-left: 7%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17%;
+  max-width: 80%;
+  padding: 0 5%;
 
-  @media (min-width: 975px) {
-    margin-left: 9%;
-    gap: 20px;
-    width: 50%;
+  @media (min-width: 768px) {
+    max-width: 60%;
   }
 
-  @media (max-width: 768px) {
-    margin-left: 5%;
+  @media (min-width: 975px) {
+    max-width: 50%;
   }
 `;
 
 export const TechnologyItem = styled.div`
-  margin-left: 7%;
-  margin-bottom: 5%;
+  flex: 1 1 30%;
+  margin: 2%;
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
@@ -466,39 +472,36 @@ export const TechnologyItem = styled.div`
     transform: scale(1.07);
   }
 
-  @media (min-width: 975px) {
-    gap: 40%;
-    font-size: 1rem;
-    margin-left: 10%;
-  }
-
-  @media (max-width: 768px) {
-    margin-left: 3%;
-    margin-bottom: 3%;
+  @media (min-width: 768px) {
+    flex-basis: 20%;
+    margin: 1%;
     font-size: 1rem;
   }
 `;
 
 export const GitHubIconFIQ = styled.div`
-  width: 6%;
-  margin-left: 30%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;
+  margin-left: 35%;
+  width: 10%;
+  margin-top: 2%;
   color: #2d2e32;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.07);
     color: #147efb;
   }
 
-  @media (max-width: 1373px) {
-    margin-left: 27%;
+  @media (min-width: 975px) {
+    margin-top: 3%;
   }
 
-  @media (min-width: 975px) {
-    margin-left: 35%;
-    width: 20%;
-    margin-top: 3%;
+  @media (max-width: 768px) {
+    margin-left: 46%;
+    margin-bottom: 7%;
+    font-size: 1rem;
   }
 `;
 
@@ -603,19 +606,24 @@ export const BookTextContainer = styled.div`
 
 export const BookTechnologiesContainer = styled.div`
   display: flex;
-  margin-left: 7%;
-  width: 60%;
-  margin-top: 1%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+
+  @media (min-width: 768px) {
+    max-width: 60%;
+  }
 
   @media (min-width: 975px) {
-    margin-left: 26%;
-    width: 80%;
+    max-width: 50%;
   }
 `;
 
 export const BookTechnologyItem = styled.div`
-  margin-right: 15%;
-  margin-bottom: 8%;
+  flex: 1 1 30%;
+  margin: 2%;
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
@@ -626,30 +634,35 @@ export const BookTechnologyItem = styled.div`
     transform: scale(1.07);
   }
 
-  @media (min-width: 975px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    margin-left: 3%;
-    margin-bottom: 3%;
+  @media (min-width: 768px) {
+    flex-basis: 20%;
+    margin: 1%;
     font-size: 1rem;
   }
 `;
 
 export const BookGitHubIconFIQ = styled.div`
-  width: 9%;
-  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin-top: 2%;
   color: #2d2e32;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.07);
     color: #147efb;
   }
 
-  @media (max-width: 970px) {
-    margin-left: 18%;
-    width: 20%;
+  @media (min-width: 975px) {
+    margin-top: 3%;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 14%;
+    margin-bottom: 7%;
+    font-size: 1rem;
   }
 `;
 
@@ -663,23 +676,23 @@ export const BookImage = styled.img`
 `;
 
 export const SecurityScreen = styled.div`
-  margin-left: 20%;
-  margin-top: 6%;
+  margin-left: 16%;
+  margin-top: 8%;
   display: flex;
   align-items: center;
   gap: 50px;
   width: 80%;
 
   h2 {
-    margin-left: 17%;
+    font-size: 1.2rem;
+    margin-left: 25%;
     color: #2d2e32;
-    font-size: 1.5rem;
     text-transform: uppercase;
   }
 
   p {
-    margin-left: 5%;
-    width: 60%;
+    margin-left: 3%;
+    width: 70%;
     font-size: 1.1rem;
     font-weight: 400;
     color: #757272;
@@ -691,43 +704,24 @@ export const SecurityScreen = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
-    margin-left: 5%;
-    margin-top: 2%;
-
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  @media (max-width: 1373px) {
     width: 90%;
-
-    a {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
-
-    h2 {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
-
-    p {
-      width: 100%;
-      font-size: 1rem;
-    }
+    margin-left: 12%;
   }
 
   @media (max-width: 970px) {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6%;
+    margin-top: 3%;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 88%;
+    width: 100%;
 
     h2 {
-      margin-left: 0;
       font-size: 1.2rem;
+      text-align: center;
+      margin-left: 0;
     }
 
     p {
@@ -735,11 +729,59 @@ export const SecurityScreen = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 500px) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 100%;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+`;
+
+export const SecurityScreenImage = styled.img`
+  transition: transform 0.3s ease;
+  margin-left: 5%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1373px) {
+    width: 45%;
+  }
+
+  @media (max-width: 970px) {
+    display: none;
+  }
+
+  @media (max-width: 375px) {
+    width: 300px;
+  }
 `;
 
 export const SecurityScreenTextContainer = styled.div`
-  margin-left: 6%;
-  width: 50%;
+  margin-left: 3%;
+
+  @media (max-width: 1373px) {
+    width: 55%;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-left: 17%;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 
   @media (max-width: 970px) {
     align-items: center;
@@ -750,25 +792,39 @@ export const SecurityScreenTextContainer = styled.div`
       height: 70%;
     }
   }
+
+  @media (max-width: 500px) {
+    width: 95%;
+
+    h2 {
+      margin-left: 5%;
+    }
+
+    p {
+      width: 100%;
+      height: 70%;
+    }
+  }
 `;
 
 export const SecurityScreenTechnologiesContainer = styled.div`
   display: flex;
-  margin-left: 2%;
+  margin-left: 9%;
+  width: 100%;
+
+  @media (min-width: 500px) {
+    width: 40%;
+  }
 
   @media (min-width: 975px) {
-
-}
-
-  @media (max-width: 768px) {
-    margin-left: 5%;
+    max-width: 50%;
   }
 `;
 
 export const SecurityScreenTechnologyItem = styled.div`
-  margin-top: 1%;
-  margin-left: 8%;
-  margin-bottom: 5%;
+  flex: 1 1 30%;
+  margin: 2%;
+  padding: 5%;
   font-size: 1.2rem;
   font-weight: 700;
   color: #000000;
@@ -779,23 +835,21 @@ export const SecurityScreenTechnologyItem = styled.div`
     transform: scale(1.07);
   }
 
-  @media (min-width: 975px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    margin-left: 3%;
-    margin-bottom: 3%;
+  @media (min-width: 768px) {
+    flex-basis: 20%;
     font-size: 1rem;
   }
 `;
 
 export const SecurityScreenGitHubIconFIQ = styled.div`
-  width: 6%;
-  margin-left: 30.5%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;
+  margin-left: 29%;
+  width: 10%;
+  margin-top: 2%;
   color: #2d2e32;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.07);
@@ -803,25 +857,18 @@ export const SecurityScreenGitHubIconFIQ = styled.div`
   }
 
   @media (min-width: 975px) {
-    margin-left: 35%;
-    width: 20%;
-}
-`;
-
-export const SecurityScreenImage = styled.img`
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
+    margin-top: 3%;
   }
 
-  @media (max-width: 970px) {
-    display: none;
+  @media (max-width: 500px) {
+    margin-left: 39%;
+    margin-bottom: 7%;
+    font-size: 1rem;
   }
 `;
 
 export const ContactMe = styled.div`
-  margin-left: 20%;
+  margin-left: 17%;
   margin-top: 8%;
 
   p {
