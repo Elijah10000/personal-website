@@ -75,7 +75,7 @@ const Home = () => {
           </h3>
         </IntroContainer>
         <ImageContainer>
-          <WarpedImage src="/assets/Picture1.jpg" alt="Picture1" style={{ height: '300px', width: '300px', borderRadius: '90px' }} />
+          <WarpedImage src="/assets/Picture1.jpg" alt="Picture1" style={{ height: '350px', width: '350px', borderRadius: '90px' }} />
         </ImageContainer>
         <Socials>
           <a href="https://github.com/Elijah10000">
